@@ -6,12 +6,14 @@ import StatefullGreeting from "./components/StatefullGreetings";
 import StatefullGreetingWithCallback from "./components/StatefullGreetingWithCallback";
 import EventsClass from "./components/EventsClass";
 import EventsFunctional from "./components/EventsFunctional";
+import ConditionalRendering from "./components/ConditionalRendering";
+import ConditionalRenderingFunctional from "./components/ConditionalRenderingFunctional";
 
 function App() {
   return (
     <div className="App">
-        <EventsFunctional />
-        <EventsClass />
+        <ConditionalRendering />
+        <ConditionalRenderingFunctional connected={true} />
     </div>
   );
 }
