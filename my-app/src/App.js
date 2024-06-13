@@ -8,12 +8,14 @@ import EventsClass from "./components/EventsClass";
 import EventsFunctional from "./components/EventsFunctional";
 import ConditionalRendering from "./components/ConditionalRendering";
 import ConditionalRenderingFunctional from "./components/ConditionalRenderingFunctional";
+import NestingComponents from "./components/Nesting/NestingComponents"
+import MethodAsPropsParent from "./components/MethodAsProps/MethodAsPropsParent";
+import RenderingLists from "./components/RenderingLists/RenderingLists";
 
 function App() {
   return (
     <div className="App">
-        <ConditionalRendering />
-        <ConditionalRenderingFunctional connected={true} />
+        <RenderingLists />
     </div>
   );
 }
