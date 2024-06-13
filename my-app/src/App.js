@@ -4,11 +4,14 @@ import FunctionalGreeting from "./components/FunctionalGreeting";
 import FunctionalGreetingWithProps from "./components/FunctionalGreetingWithProps";
 import StatefullGreeting from "./components/StatefullGreetings";
 import StatefullGreetingWithCallback from "./components/StatefullGreetingWithCallback";
+import EventsClass from "./components/EventsClass";
+import EventsFunctional from "./components/EventsFunctional";
 
 function App() {
   return (
     <div className="App">
-        <StatefullGreeting greeting="I am a stateful class" name="Ma'am" />
+        <EventsFunctional />
+        <EventsClass />
     </div>
   );
 }
