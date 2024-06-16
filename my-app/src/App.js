@@ -12,6 +12,7 @@ import NestingComponents from "./components/Nesting/NestingComponents"
 import MethodAsPropsParent from "./components/MethodAsProps/MethodAsPropsParent";
 import RenderingLists from "./components/RenderingLists/RenderingLists";
 import LifeCyclesCDM from "./components/lifecycles/LifeCyclesCDM";
+import LifeCyclesCDU from "./components/lifecycles/LifeCyclesCDU";
 
 function App() {
     return (
@@ -21,7 +22,10 @@ function App() {
                 /* <RenderingLists /> */
 
                 // Component lifecycles
-                <LifeCyclesCDM />
+                // mount
+                // <LifeCyclesCDM />
+                // update
+                <LifeCyclesCDU />
             }
         </div>
     );
