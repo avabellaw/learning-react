@@ -11,13 +11,20 @@ import ConditionalRenderingFunctional from "./components/ConditionalRenderingFun
 import NestingComponents from "./components/Nesting/NestingComponents"
 import MethodAsPropsParent from "./components/MethodAsProps/MethodAsPropsParent";
 import RenderingLists from "./components/RenderingLists/RenderingLists";
+import LifeCyclesCDM from "./components/lifecycles/LifeCyclesCDM";
 
 function App() {
-  return (
-    <div className="App">
-        <RenderingLists />
-    </div>
-  );
+    return (
+        <div className="App">
+            {
+                // Rendering lists
+                /* <RenderingLists /> */
+
+                // Component lifecycles
+                <LifeCyclesCDM />
+            }
+        </div>
+    );
 }
 
 export default App;
