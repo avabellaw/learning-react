@@ -13,6 +13,7 @@ import MethodAsPropsParent from "./components/MethodAsProps/MethodAsPropsParent"
 import RenderingLists from "./components/RenderingLists/RenderingLists";
 import LifeCyclesCDM from "./components/lifecycles/LifeCyclesCDM";
 import LifeCyclesCDU from "./components/lifecycles/LifeCyclesCDU";
+import LifeCyclesCWU from "./components/lifecycles/LifeCyclesCWU";
 
 function App() {
     return (
@@ -23,9 +24,11 @@ function App() {
 
                 // Component lifecycles
                 // mount
-                // <LifeCyclesCDM />
+                /* <LifeCyclesCDM 
                 // update
-                <LifeCyclesCDU />
+                <LifeCyclesCDU /> */
+                // Will Unmount
+                <LifeCyclesCWU />
             }
         </div>
     );
