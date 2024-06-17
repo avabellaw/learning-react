@@ -11,27 +11,12 @@ export class ControlledForm extends Component {
         }
     }
 
-    handleNameChange = (event) => {
+    handleInputChange = (event) => {
+        const { name, value } = event.target
         this.setState(
             {
-                name: event.target.value
+                [name]: value
             });
-    }
-
-    handleCategoryChange = (event) => {
-        this.setState(
-            {
-                category: event.target.value
-            }
-        )
-    }
-
-    handleCommentsChange = (event) => {
-        this.setState(
-            {
-                comments: event.target.value
-            }
-        );
     }
 
     render() {
@@ -41,12 +26,12 @@ export class ControlledForm extends Component {
                     <h2>Please fill out the form below</h2>
                     <div>
                         <label htmlFor='name' >Your Name:</label>
-                        <input value={this.state.name} onChange={this.handleNameChange} type="text" id='name' name='name' />
+                        <input value={this.state.name} onChange={this.handleInputChange} type="text" id='name' name='name' />
                     </div>
 
                     <div>
                         <label htmlFor='category'>Inquiry category:</label>
-                        <select id='category' name='category' value={this.state.category} onChange={this.handleCategoryChange}>
+                        <select id='category' name='category' value={this.state.category} onChange={this.handleInputChange}>
                             <option value="" disabled>Select an option...</option>
                             <option value="website">Website issue</option>
                             <option value="order">Order issue</option>
@@ -56,7 +41,7 @@ export class ControlledForm extends Component {
 
                     <div>
                         <label htmlFor='comments'>Comments</label>
-                        <textarea id='comments' name='comments' value={this.state.comments} onChange={this.handleCommentsChange}></textarea>
+                        <textarea id='comments' name='comments' value={this.state.comments} onChange={this.handleInputChange}></textarea>
                     </div>
 
                     <input type="submit" value="Submit" />
