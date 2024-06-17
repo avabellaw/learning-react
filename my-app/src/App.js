@@ -14,6 +14,7 @@ import RenderingLists from "./components/RenderingLists/RenderingLists";
 import LifeCyclesCDM from "./components/lifecycles/LifeCyclesCDM";
 import LifeCyclesCDU from "./components/lifecycles/LifeCyclesCDU";
 import LifeCyclesCWU from "./components/lifecycles/LifeCyclesCWU";
+import ControlledForm from "./components/forms/ControlledForm";
 
 function App() {
     return (
@@ -23,12 +24,19 @@ function App() {
                 /* <RenderingLists /> */
 
                 // Component lifecycles
-                // mount
-                /* <LifeCyclesCDM 
-                // update
-                <LifeCyclesCDU /> */
-                // Will Unmount
-                <LifeCyclesCWU />
+
+                    // mount
+                    /* <LifeCyclesCDM 
+
+                    // update
+                    <LifeCyclesCDU /> 
+
+                    // Will Unmount
+                    <LifeCyclesCWU />*/
+
+                // Forms
+
+                <ControlledForm />
             }
         </div>
     );
